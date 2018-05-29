@@ -1,0 +1,44 @@
+.level-filter-component{
+  display: inline-block;
+  font-size: 13px;
+  color: #fff;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.level-filter-component > div{
+  display: inline-block;
+}
+
+.level-filter-component .levels{
+  margin-left: 4px;
+}
+
+.level-filter-component .levels > div{
+  display: inline-block;
+  margin: 0 4px;
+  cursor: pointer;
+  color: #878789;
+}
+
+.level-filter-component .levels > div:hover{
+  color: #fff;
+}
+
+.level-filter-component .levels > div.selected{
+  color: #6fc13e;
+}
+
+@media (max-width: 760px) {
+  .level-filter-component{
+    font-size: 12px;
+  }
+
+  .level-filter-component .levels{
+    margin-left: 2px;
+  }
+
+  .level-filter-component .levels{
+    margin-left: 3px;
+  }
+}

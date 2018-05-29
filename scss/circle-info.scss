@@ -1,0 +1,64 @@
+.circle-info-component{
+  width: 72px;
+  height: 72px;
+  position: relative;
+}
+
+.circle-info-component .circle{
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-image: url('/assets/circle.png');
+  background-size: contain;
+}
+
+.circle-info-component .circle-active{
+  width: 36px;
+  height: 72px;
+  position: absolute;
+  z-index: 2;
+  left: 36px;
+  top: 0;
+  overflow: hidden;
+}
+
+.circle-info-component .circle-active > div{
+  width: 36px;
+  height: 72px;
+  position: absolute;
+  z-index: 2;
+  left: -36px;
+  top: 0;
+  transform: rotate(30deg);
+  transform-origin: 36px 36px;
+  overflow: hidden;
+}
+
+.circle-info-component .circle-active > div > div{
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  top: 0;
+  background-image: url('/assets/circle-active.png');
+  background-size: contain;
+  transform: rotate(-30deg);
+}
+
+
+.circle-info-component .title{
+  width: 69px;
+  height: 72px;
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  line-height: 70px;
+  font-size: 17px;
+  left: 0;
+  top: 0;
+}

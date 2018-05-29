@@ -1,0 +1,164 @@
+.app-component{
+  background-color: #0e0f12;
+  padding-bottom: 32px;
+}
+
+.app-component > .loader{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url('/assets/loader.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px;
+  z-index: 10;
+}
+
+.app-component > .header{
+  height: 80px;
+  line-height: 74px;
+  font-size: 40px;
+  background-image: url('/assets/top.jpg');
+  background-size: cover;
+  color: #77E5B4;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+}
+
+.app-component > .header > div{
+  font-weight: bold;
+}
+
+.app-component > .header > div > div{
+  padding-left: 56px;
+}
+
+.app-component > .search > div{
+  background-color: #0e0f12;
+  height: 60px;
+  border-bottom: 1px solid #1d1f22;
+}
+
+.app-component > .pagination > div > .load-more{
+  margin-top: 16px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #0e0f12;
+  color: #fff;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.app-component > .pagination > div > .load-more.disabled{
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.app-component > .search > div > div{
+  margin-left: 56px;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.app-component > .search > div > div:last-of-type{
+  margin-right: 52px;
+  margin-left: 0;
+  margin-top: 17px;
+  float: right;
+}
+
+.app-component > .search > div > div:last-of-type .close{
+  margin-bottom: 6px;
+}
+
+.app-component > .search .stars-component{
+  margin-top: 11px;
+}
+
+.app-component > .search input{
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
+  color: #fff;
+  padding: 4px 0;
+  border-bottom: 1px solid #484645;
+  width: 360px;
+  vertical-align: middle;
+}
+
+.app-component > .search input::placeholder{
+  color: #484645;
+}
+
+.app-component > .search input:focus{
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.app-component .search .close{
+  display: inline-block;
+  width: 20px;
+  height: 26px;
+  transform: scale(1, 0.7);
+  font-size: 21px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.app-component .search .close.disabled{
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.app-component .search .close:before{
+  content: 'X';
+  color: #6fc13e;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .app-component > .header{
+    font-size: 23px;
+    height: 48px;
+    line-height: 48px;
+  }
+
+  .app-component > .header > div > div{
+    padding-left: 0;
+  }
+
+  .app-component > .search > div{
+    height: 40px;
+  }
+
+  .app-component > .search input{
+    padding: 2px 0;
+    margin-top: 8px;
+    font-size: 14px;
+    width: 200px;
+  }
+
+  .app-component > .search > div > div{
+    margin-top: 4px;
+    margin-left: 0;
+  }
+  .app-component > .search > div > div:last-of-type{
+    margin-right: -6px;
+    margin-top: 9px;
+  }
+
+  .app-component > .search .stars-component{
+    margin-top: 10px;
+  }
+
+  .app-component .search .close{
+    vertical-align: bottom;
+  }
+}
+
+

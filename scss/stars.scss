@@ -1,0 +1,63 @@
+.stars-component{
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 20px;
+}
+
+.stars-component .normal-stars{
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.stars-component:hover .normal-stars, .stars-component .normal-stars.rating-selected{
+  display: none;
+}
+
+.stars-component .selected-stars{
+  display: none;
+  pointer-events: none;
+}
+
+.stars-component:hover .selected-stars, .stars-component .selected-stars.rating-selected{
+  display: inline-block;
+}
+
+.stars-component .star, .stars-component .star-active, .stars-component .star-user{
+  width: 18px;
+  height: 18px;
+  margin-right: 2px;
+  background-image: url('/assets/star.svg');
+  display: inline-block;
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.stars-component .star-active{
+  background-image: url('/assets/star-active.svg');
+  pointer-events: none;
+}
+
+.stars-component .star-user{
+  background-image: url('/assets/star-user.svg');
+  display: none;
+}
+
+.stars-component .star-user.selected{
+  display: inline-block;
+}
+
+.stars-component:hover .star-user.selected{
+  display: none;
+}
+
+.stars-component:hover .star-user.hover{
+  display: inline-block;
+}
+
+.stars-component > div{
+  position: absolute;
+  left: 0;
+  top: 0;
+}

@@ -1,0 +1,85 @@
+.list-element-component{
+  border-bottom: 1px solid #1d1f22;
+  padding: 13px 56px;
+}
+
+.list-element-component > div{
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.list-element-component .name .song-title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list-element-component > .logo{
+  background-color: #6fc13e;
+  border-radius: 10px;
+  width: 90px;
+  height: 46px;
+  padding: 10px 0;
+  background-image: url('/assets/fingerprint-white.png');
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+.list-element-component > .difficulty-level{
+  width: 75px;
+  margin-left: 10px;
+}
+
+.list-element-component .name{
+  width: calc(100% - 210px);
+}
+
+.list-element-component .ratings{
+  margin-top: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.list-element-component .performer{
+  cursor: pointer;
+  width: calc(100% - 110px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 8px;
+}
+
+.list-element-component .ratings > div{
+  display: inline-block;
+  vertical-align: middle;
+  color: #878789;
+}
+
+.list-element-component > .actions{
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 19px;
+  border: 1px solid #56575e;
+  color: #56575e;
+  float: right;
+  margin-top: 18px;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .app-component > .header{
+    font-size: 32px;
+  }
+
+  .app-component > .header > div > div{
+    padding-left: 0;
+  }
+
+  .list-element-component{
+    padding: 13px 0px;
+  }
+}
