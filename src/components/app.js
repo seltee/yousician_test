@@ -94,9 +94,6 @@ export default class App extends React.Component {
 
     return (
       <div className="app-component">
-        {
-          inLoad ? <div className="loader" /> : null
-        }
         <div className="header">
           <div className="block-middle">
             <div>
@@ -129,6 +126,9 @@ export default class App extends React.Component {
           </div>
         </div>
         <div className="list">
+          {
+            inLoad ? <div className="loader" /> : null
+          }
           <div className="block-middle">
             {
               count === 0 ? <h3>No results</h3> : null

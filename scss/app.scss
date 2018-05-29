@@ -3,20 +3,6 @@
   padding-bottom: 32px;
 }
 
-.app-component > .loader{
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  background-image: url('/assets/loader.gif');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 64px;
-  z-index: 10;
-}
-
 .app-component > .header{
   height: 80px;
   line-height: 74px;
@@ -119,6 +105,25 @@
   content: 'X';
   color: #6fc13e;
   cursor: pointer;
+}
+
+.app-component > .list{
+  position: relative;
+  min-height: 120px;
+}
+
+.app-component > .list > .loader{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url('/assets/loader.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px;
+  z-index: 10;
 }
 
 @media (max-width: 760px) {
