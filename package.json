@@ -9,10 +9,7 @@
   "author": "Dmitry Shashkov",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0",
-    "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.5",
-    "env": "0.0.2",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

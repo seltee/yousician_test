@@ -80,7 +80,7 @@ export default class LevelFilter extends React.Component {
 
 LevelFilter.propTypes = {
   selectLevels: PropTypes.func,
-  selectedLevels: PropTypes.array
+  selectedLevels: PropTypes.arrayOf(PropTypes.object)
 };
 
 LevelFilter.defaultProps = {
