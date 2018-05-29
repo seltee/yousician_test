@@ -97,7 +97,7 @@ export default class App extends React.Component {
         <div className="header">
           <div className="block-middle">
             <div>
-              Yousition Demo
+              Yousician Demo
             </div>
           </div>
         </div>
