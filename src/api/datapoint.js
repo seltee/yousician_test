@@ -17,8 +17,6 @@ function getData(method, link, data) {
           start, limit, search, searchLevels
         } = data;
 
-        console.log(searchLevels);
-
         const searchList = [];
         for (let i = 0; i < Music.length; i++) {
           let allow = true;
@@ -30,7 +28,6 @@ function getData(method, link, data) {
             }
           }
           if (searchLevels && searchLevels.length && allow) {
-            console.log('Check');
             allow = false;
             for (let l = 0; l < searchLevels.length; l++) {
               if (Music[i].level >= searchLevels[l].from && Music[i].level <= searchLevels[l].to) {
